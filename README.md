@@ -1,6 +1,6 @@
 # Pixlee
 
-TODO: Write a gem description
+This gem is a simple API wrapper for Pixlee's API. It allows you to pull your albums, specific images from an album, or search for users albums.
 
 ## Installation
 
@@ -18,7 +18,21 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+
+	pixlee = Pixlee::API.new(<pixlee_api_key>, <pixlee_app_name>)
+
+	# Getting  your albums
+	albums = pixlee.get_albums
+
+	# Getting all photos in an album
+	photos = pixlee.get_album_contents(<album_id>, :type => "all", :sort => "recent|popularity")
+
+	# Getting a specific photos data
+	photo = pixlee.get_album_photo(<album_id>, <album_photo_id>, :type => "public|private")
+
+	# Getting a users albums
+	albums = pixlee.get_users_albums(<user_id>)
+
 
 ## Contributing
 
