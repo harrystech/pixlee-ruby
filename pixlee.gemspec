@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["dschwartz88@gmail.com"]
   spec.description   = ["A simple wrapper for accessing the Pixlee API"]
   spec.summary       = ["A simple wrapper for accessing the Pixlee API"]
-  spec.homepage      = "http://github.com/danielschwartz/pixlee-ruby"
+  spec.homepage      = "http://github.com/harrystech/pixlee-ruby"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
